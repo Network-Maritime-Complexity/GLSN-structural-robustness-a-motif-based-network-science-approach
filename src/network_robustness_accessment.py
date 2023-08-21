@@ -100,7 +100,6 @@ def keep_degree(G, df, n):
     save_data = pd.DataFrame()
     save_data['LCC-keep-degree'] = save_data_all.mean(1)
     save_data = save_data['LCC-keep-degree']
-    save_data.reset_index(inplace=True)
     save_data.columns = ['id', 'LCC-keep-degree']
     return save_data, save_data['LCC-keep-degree'].sum()/907
 
