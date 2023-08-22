@@ -232,7 +232,7 @@ def M5_centrality(M5, nodes):
 
 
 def MC():
-    df1 = pd.read_excel('../data/edges of a synthetic network.xlsx')
+    df1 = pd.read_csv('../data/edges of a synthetic network.csv')
     df1 = df1.astype(str)
     G = nx.Graph()
     for i in range(0, df1.shape[0]):
